@@ -51,6 +51,9 @@ Find out more about us:
 
 == Changelog ==
 
+= 1.0.2 =
+* Dashboard CSS + JS enhancements
+
 = 1.0.1 =
 * Added option to enable or disable Lazy Loading on mobile devices
 
