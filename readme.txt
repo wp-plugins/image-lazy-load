@@ -3,7 +3,7 @@ Contributors: n7studios,wpcube
 Donate link: http://www.wpcube.co.uk/plugins/image-lazy-load
 Tags: lazy-load,lazy,load,image,images,unveil,performance,caching,cache
 Requires at least: 3.6
-Tested up to: 3.7
+Tested up to: 3.8.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -50,6 +50,12 @@ Find out more about us:
 == Screenshots ==
 
 == Changelog ==
+
+= 1.0.4 =
+* Added translation support and .pot file
+
+= 1.0.3 =
+* JS optimisation enhancements
 
 = 1.0.2 =
 * Dashboard CSS + JS enhancements

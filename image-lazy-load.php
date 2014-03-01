@@ -2,7 +2,7 @@
 /**
 * Plugin Name: Image Lazy Load (Unveil.js)
 * Plugin URI: http://www.wpcube.co.uk/plugins/image-lazy-load
-* Version: 1.0.2
+* Version: 1.0.4
 * Author: WP Cube
 * Author URI: http://www.wpcube.co.uk
 * Description: Lazy load content images using the unveil.js jQuery plugin
@@ -31,7 +31,7 @@
 * @package WP Cube
 * @subpackage Image Lazy Load
 * @author Tim Carr
-* @version 1.0.2
+* @version 1.0.4
 * @copyright WP Cube
 */
 class imageUnveil {
@@ -43,7 +43,7 @@ class imageUnveil {
         $this->plugin = new stdClass;
         $this->plugin->name = 'image-lazy-load'; // Plugin Folder
         $this->plugin->displayName = 'Image Lazy Load'; // Plugin Name
-        $this->plugin->version = '1.0.2';
+        $this->plugin->version = '1.0.3';
         $this->plugin->folder = WP_PLUGIN_DIR.'/'.$this->plugin->name; // Full Path to Plugin Folder
         $this->plugin->url = WP_PLUGIN_URL.'/'.str_replace(basename( __FILE__),"",plugin_basename(__FILE__));
         
@@ -56,9 +56,10 @@ class imageUnveil {
 		// Hooks
         add_action('admin_enqueue_scripts', array(&$this, 'adminScriptsAndCSS'));
         add_action('admin_menu', array(&$this, 'adminPanelsAndMetaBoxes'));
+        add_action('plugins_loaded', array(&$this, 'loadLanguageFiles'));
         add_action('wp_enqueue_scripts', array(&$this, 'scriptsAndCSS'));
         add_action('wp_footer', array(&$this, 'frontendSettings'));
-
+        
         // Filters
         add_filter('the_content', array(&$this, 'replaceImg'));
 
@@ -116,14 +117,20 @@ class imageUnveil {
 		// Load Settings Form
         include_once(WP_PLUGIN_DIR.'/'.$this->plugin->name.'/views/settings.php');  
     }
+    
+    /**
+	* Loads plugin textdomain
+	*/
+	function loadLanguageFiles() {
+		load_plugin_textdomain($this->plugin->name, false, $this->plugin->name.'/languages/');
+	}
 
     /**
     * Register and enqueue and JS and CSS for the WordPress Frontend
     */
     function scriptsAndCSS() {
         // JS
-        wp_enqueue_script($this->plugin->name.'-unveil', $this->plugin->url.'js/jquery.unveil.min.js', array('jquery'), $this->plugin->version, true);
-        wp_enqueue_script($this->plugin->name.'-unveil-ui', $this->plugin->url.'js/ui.js', array('jquery'), $this->plugin->version, true);
+        wp_enqueue_script($this->plugin->name.'-unveil-ui', $this->plugin->url.'js/unveil-ui.min.js', array('jquery'), $this->plugin->version, true);
         
         // CSS
         wp_enqueue_style($this->plugin->name.'-frontend', $this->plugin->url.'css/frontend.css', array(), $this->plugin->version); 
