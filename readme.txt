@@ -51,6 +51,9 @@ Find out more about us:
 
 == Changelog ==
 
+= 1.0.5 =
+* Added unveil-ui.min.js, which was wrongly removed in a previous update and causing console.log errors
+
 = 1.0.4 =
 * Added translation support and .pot file
 
