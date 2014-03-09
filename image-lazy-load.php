@@ -2,7 +2,7 @@
 /**
 * Plugin Name: Image Lazy Load (Unveil.js)
 * Plugin URI: http://www.wpcube.co.uk/plugins/image-lazy-load
-* Version: 1.0.4
+* Version: 1.0.5
 * Author: WP Cube
 * Author URI: http://www.wpcube.co.uk
 * Description: Lazy load content images using the unveil.js jQuery plugin
@@ -31,7 +31,7 @@
 * @package WP Cube
 * @subpackage Image Lazy Load
 * @author Tim Carr
-* @version 1.0.4
+* @version 1.0.5
 * @copyright WP Cube
 */
 class imageUnveil {
@@ -43,7 +43,7 @@ class imageUnveil {
         $this->plugin = new stdClass;
         $this->plugin->name = 'image-lazy-load'; // Plugin Folder
         $this->plugin->displayName = 'Image Lazy Load'; // Plugin Name
-        $this->plugin->version = '1.0.3';
+        $this->plugin->version = '1.0.5';
         $this->plugin->folder = WP_PLUGIN_DIR.'/'.$this->plugin->name; // Full Path to Plugin Folder
         $this->plugin->url = WP_PLUGIN_URL.'/'.str_replace(basename( __FILE__),"",plugin_basename(__FILE__));
         
