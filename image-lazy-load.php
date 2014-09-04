@@ -2,7 +2,7 @@
 /**
 * Plugin Name: Image Lazy Load (Unveil.js)
 * Plugin URI: http://www.wpcube.co.uk/plugins/image-lazy-load
-* Version: 1.0.5
+* Version: 1.0.6
 * Author: WP Cube
 * Author URI: http://www.wpcube.co.uk
 * Description: Lazy load content images using the unveil.js jQuery plugin
@@ -31,7 +31,7 @@
 * @package WP Cube
 * @subpackage Image Lazy Load
 * @author Tim Carr
-* @version 1.0.5
+* @version 1.0.6
 * @copyright WP Cube
 */
 class imageUnveil {
@@ -43,7 +43,7 @@ class imageUnveil {
         $this->plugin = new stdClass;
         $this->plugin->name = 'image-lazy-load'; // Plugin Folder
         $this->plugin->displayName = 'Image Lazy Load'; // Plugin Name
-        $this->plugin->version = '1.0.5';
+        $this->plugin->version = '1.0.6';
         $this->plugin->folder = WP_PLUGIN_DIR.'/'.$this->plugin->name; // Full Path to Plugin Folder
         $this->plugin->url = WP_PLUGIN_URL.'/'.str_replace(basename( __FILE__),"",plugin_basename(__FILE__));
         
@@ -54,7 +54,6 @@ class imageUnveil {
 		$dashboard = new WPCubeDashboardWidget($this->plugin); 
 		
 		// Hooks
-        add_action('admin_enqueue_scripts', array(&$this, 'adminScriptsAndCSS'));
         add_action('admin_menu', array(&$this, 'adminPanelsAndMetaBoxes'));
         add_action('plugins_loaded', array(&$this, 'loadLanguageFiles'));
         add_action('wp_enqueue_scripts', array(&$this, 'scriptsAndCSS'));
@@ -84,18 +83,10 @@ class imageUnveil {
     }
     
     /**
-    * Register and enqueue any JS and CSS for the WordPress Administration
-    */
-    function adminScriptsAndCSS() {
-    	// CSS
-        wp_enqueue_style($this->plugin->name.'-admin', $this->plugin->url.'css/admin.css', array(), $this->plugin->version); 
-    }
-    
-    /**
     * Register the plugin settings panel
     */
     function adminPanelsAndMetaBoxes() {
-        add_menu_page($this->plugin->displayName, $this->plugin->displayName, 'manage_options', $this->plugin->name, array(&$this, 'adminPanel'), $this->plugin->url.'images/icons/small.png');
+        add_menu_page($this->plugin->displayName, $this->plugin->displayName, 'manage_options', $this->plugin->name, array(&$this, 'adminPanel'), 'dashicons-images-alt');
     }
     
 	/**
