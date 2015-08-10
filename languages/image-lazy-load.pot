@@ -1,19 +1,21 @@
-# Copyright (C) 2014 Image Lazy Load (Unveil.js)
+# Copyright (C) 2015 Image Lazy Load (Unveil.js)
 # This file is distributed under the same license as the Image Lazy Load (Unveil.js) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Image Lazy Load (Unveil.js) 1.0.4\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/image-lazy-load\n"
-"POT-Creation-Date: 2014-03-01 18:33:47+00:00\n"
+"Project-Id-Version: Image Lazy Load (Unveil.js) 1.0.6\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/image-lazy-load\n"
+"POT-Creation-Date: 2015-03-26 11:33:00+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
 #: _modules/dashboard/views/dashboard-nodata.php:14
-msgid "Thanks for using our plugins - why not check out some of our other amazing Premium WordPress Plugins?"
+msgid ""
+"Thanks for using our plugins - why not check out some of our other amazing "
+"Premium WordPress Plugins?"
 msgstr ""
 
 #: _modules/dashboard/views/dashboard-nodata.php:15
@@ -22,7 +24,9 @@ msgid "Visit WP Cube"
 msgstr ""
 
 #: _modules/dashboard/views/dashboard.php:18
-msgid "Thanks for using our plugins - why not check out some of our other amazing Premium WordPress Plugins below?"
+msgid ""
+"Thanks for using our plugins - why not check out some of our other amazing "
+"Premium WordPress Plugins below?"
 msgstr ""
 
 #: _modules/dashboard/views/dashboard.php:33
@@ -43,7 +47,7 @@ msgstr ""
 
 #: _modules/dashboard/views/footer-upgrade.php:16
 #: _modules/dashboard/views/sidebar-pro.php:23
-#: _modules/dashboard/views/sidebar-pro.php:28
+#: _modules/dashboard/views/sidebar-pro.php:30
 msgid "Support"
 msgstr ""
 
@@ -52,7 +56,7 @@ msgid "Access to one on one email support"
 msgstr ""
 
 #: _modules/dashboard/views/footer-upgrade.php:17
-#: _modules/dashboard/views/sidebar-pro.php:27
+#: _modules/dashboard/views/sidebar-pro.php:28
 msgid "Documentation"
 msgstr ""
 
@@ -65,7 +69,9 @@ msgid "Updates"
 msgstr ""
 
 #: _modules/dashboard/views/footer-upgrade.php:18
-msgid "Receive one click update notifications, right within your WordPress Adminstration panel"
+msgid ""
+"Receive one click update notifications, right within your WordPress "
+"Adminstration panel"
 msgstr ""
 
 #: _modules/dashboard/views/footer-upgrade.php:19
@@ -86,7 +92,9 @@ msgid "About"
 msgstr ""
 
 #: _modules/dashboard/views/sidebar-donate.php:13
-msgid "Found this plugin useful? Donations to help with support and development are appreciated."
+msgid ""
+"Found this plugin useful? Donations to help with support and development are "
+"appreciated."
 msgstr ""
 
 #: _modules/dashboard/views/sidebar-donate.php:30
@@ -100,7 +108,8 @@ msgstr ""
 
 #: _modules/dashboard/views/sidebar-donate.php:43
 #: _modules/dashboard/views/sidebar-upgrade.php:13
-msgid "Subscribe to the newsletter and receive updates on our WordPress Plugins"
+msgid ""
+"Subscribe to the newsletter and receive updates on our WordPress Plugins"
 msgstr ""
 
 #: _modules/dashboard/views/sidebar-donate.php:49
@@ -117,7 +126,7 @@ msgstr ""
 msgid "Version"
 msgstr ""
 
-#: image-lazy-load.php:110
+#: image-lazy-load.php:101
 msgid "Settings Updated."
 msgstr ""
 
@@ -144,6 +153,7 @@ msgstr ""
 #: views/settings.php:62
 msgid "Save"
 msgstr ""
+
 #. Plugin Name of the plugin/theme
 msgid "Image Lazy Load (Unveil.js)"
 msgstr ""
