@@ -1,9 +1,9 @@
 === Image Lazy Load (Unveil.js) ===
 Contributors: n7studios,wpcube
 Donate link: http://www.wpcube.co.uk/plugins/image-lazy-load
-Tags: lazy-load,lazy,load,image,images,unveil,performance,caching,cache
+Tags: lazy-load,lazy,load,image,images,unveil,performance,caching,cache,unveil.js,lazy-loading
 Requires at least: 3.6
-Tested up to: 3.8.1
+Tested up to: 4.3
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -50,6 +50,19 @@ Find out more about us:
 == Screenshots ==
 
 == Changelog ==
+
+= 1.0.7 =
+* Tested with WordPress 4.3
+* Fix: plugin_dir_path() and plugin_dir_url() used for Multisite / symlink support
+
+= 1.0.6 =
+* Fix: Dashboard errors
+* Fix: Changed Menu Icon
+* Fix: WordPress 4.0 compatibility
+* Fix: Removed unused admin CSS
+
+= 1.0.5 =
+* Added unveil-ui.min.js, which was wrongly removed in a previous update and causing console.log errors
 
 = 1.0.4 =
 * Added translation support and .pot file
